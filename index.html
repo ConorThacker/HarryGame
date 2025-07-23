@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conor's Maths for Harry!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Fredoka One', cursive;
+      }
+      /* Custom shadow for a 3D button effect */
+      .btn-shadow {
+        box-shadow: 5px 5px 0px rgba(0,0,0,1);
+      }
+      .btn-shadow:active {
+        box-shadow: none;
+        transform: translateX(5px) translateY(5px);
+      }
+       /* Custom text shadow for a blocky look */
+      .text-stroke {
+        text-shadow: 4px 4px 0 rgb(0 0 0 / 100%);
+      }
+       /* Custom container shadow */
+      .container-shadow {
+        box-shadow: 10px 10px 0px #000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-sky-400 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
